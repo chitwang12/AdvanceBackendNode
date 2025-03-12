@@ -16,7 +16,7 @@ const fetchDataAndProcess = async () => {
         }
 
         const writeFile = new WriteFile();
-        writeFile.writeToFile('data.json', data);
+        writeFile.writeToFileSync('data.json', data);
 
         const readFile = new ReadFile();
         readFile.readFromFileSync('data.json');
